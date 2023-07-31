@@ -15,7 +15,7 @@ export default function Presentation() {
           “Why?” five times to get to the root cause of a problem.
         </label>
         <label className="max-w-lg">
-          We prioritise reducing friction, making sure we are able to act with
+          We prioritize reducing friction, making sure we are able to act with
           intent without distraction. By focusing on the way we work we are able
           to increase productivity. Our environment, office and culture promote
           an anything-is-possible atmosphere and a commitment to carry an idea
