@@ -4,9 +4,9 @@ import dexterImage2 from "public/tree2.png";
 
 export default function Dexter() {
   return (
-    <div className="grid grid-cols-2 grid-rows-2 items-center justify-items-center bg-slate-50 text-neutral-900 z-20 relative ">
+    <div className="grid grid-cols-2 grid-rows-2 items-center justify-items-center bg-white text-neutral-900 z-20 relative p-10">
       <div className="pers">
-        <div className="relative w-[30vw] aspect-video tres">
+        <div className="relative w-[40vw] aspect-video tres">
           <Image
             src={dexterImage1}
             alt="Dexter screenshot"
@@ -22,7 +22,7 @@ export default function Dexter() {
           alignment, qualities obtained each cycle. Increase how much you and
           your teams enjoy it, because the cycles never end.”
         </label>
-        <label>Y5 guiding principles</label>
+        <label className="font-bold">Y5 guiding principles</label>
       </div>
 
       <div className="flex flex-col gap-4">
@@ -31,7 +31,7 @@ export default function Dexter() {
           across our growing business. I see it as our first foray into Big Data
           as a small business, thanks for your efforts and expertise on this!”
         </label>
-        <label>KYNE LARKIN, CEO WHITES POWERSPORTS</label>
+        <label className="font-bold">KYNE LARKIN, CEO WHITES POWERSPORTS</label>
       </div>
       <div className="relative w-[20vw] h-auto">
         <Image
