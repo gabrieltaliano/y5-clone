@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .showup {
+    @apply group-hover:opacity-100 opacity-30 duration-[2000ms] group-hover:duration-500;
+  }
+}
+* {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +28,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.svg-logo {
+  filter: drop-shadow(9px 17px 0px #000000a3);
+}
+.pers {
+  perspective: 100rem;
+}
+.tres {
+  transform: rotateY(31deg) scale(0.93) skewY(360deg);
 }
