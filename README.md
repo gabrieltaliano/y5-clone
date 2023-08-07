@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Node.js CI](https://github.com/gabrieltaliano/y5-clone/actions/workflows/node.js.yml/badge.svg)](https://github.com/gabrieltaliano/y5-clone/actions/workflows/node.js.yml)
 
 ## Getting Started
 
@@ -13,6 +13,10 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Online demo
+
+Hosted on vercel: [Here](https://y5-clone-gabrieltaliano.vercel.app/)
 
 
 ## DataBase
@@ -35,7 +39,7 @@ const firebaseConfig = {
 }
 ```
 
-### Important
+#### Important
 
 Save the `apiKey` value as env variable to keep it safe.
 
