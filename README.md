@@ -22,7 +22,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Hosted on vercel [here](https://y5-clone-gabrieltaliano.vercel.app/)
 
-
 ## Admin tool
 
 Added a utility route to manage the technology list shown on the site.
@@ -46,7 +45,7 @@ const firebaseConfig = {
   storageBucket: "y5-clone.appspot.com",
   messagingSenderId: "484478177315",
   appId: "1:484478177315:web:a427320c69df7a0188a196",
-}
+};
 ```
 
 ### Important
