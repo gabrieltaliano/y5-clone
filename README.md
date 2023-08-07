@@ -14,18 +14,30 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## DataBase
 
-## Learn More
+This project use Firebase Firestore database. You should create a firebase project in your console first:
 
-To learn more about Next.js, take a look at the following resources:
+- [Firebase Console](https://console.firebase.google.com/) - Create a new project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Then, copy your firebase configuration in the `lib/firebase.js` file. For example:
+
+```js
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_firebaseApiKey,
+  authDomain: "y5-clone.firebaseapp.com",
+  projectId: "y5-clone",
+  storageBucket: "y5-clone.appspot.com",
+  messagingSenderId: "484478177315",
+  appId: "1:484478177315:web:a427320c69df7a0188a196",
+}
+```
+
+### Important
+
+Save the `apiKey` value as env variable to keep it safe.
 
 ## Deploy on Vercel
 

@@ -20,7 +20,7 @@ import { TECHNOLOGIES_PATH, stack } from "./StackEditor";
 export default function StackItem({ item }: { item?: stack | undefined }) {
   const [title, setTitle] = useState<string>(item?.title || "");
   const [category, setCategory] = useState<string>(
-    item?.category || "SaaS / Applications"
+    item?.category || "Databases"
   );
   const [description, setDescription] = useState<string>(
     item?.description || ""
@@ -132,7 +132,7 @@ export default function StackItem({ item }: { item?: stack | undefined }) {
   };
 
   return (
-    <div className="flex flex-col border border-slate-500 rounded-lg bg-slate-100 text-slate-900 justify-center items-center p-2 w-fit gap-4">
+    <div className="flex flex-col border border-slate-400 rounded-lg bg-slate-100 text-slate-900 justify-between items-center p-2 w-full gap-4">
       {item?.id ? (
         <>
           <h2 className="uppercase font-bold text-lg">{item.title}</h2>
@@ -140,7 +140,11 @@ export default function StackItem({ item }: { item?: stack | undefined }) {
             {item.description}
           </label>
           <h3 className="text-sm font-bold">{item.category}</h3>
-          <img className="h-48 w-fit" src={item.imgURL} alt="preview" />
+          <img
+            className="h-48 w-fill object-contain aspect-square"
+            src={item.imgURL}
+            alt="preview"
+          />
           <button
             className="font-bold text-xs bg-red-900 rounded-md border border-red-950 text-white p-1"
             onClick={() => handleDelete({ id: item.id, imgRef: item.imgRef })}
@@ -178,7 +182,7 @@ export default function StackItem({ item }: { item?: stack | undefined }) {
           {preview && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              className="h-48 w-fit"
+              className="h-48 w-fill object-contain aspect-square"
               src={preview}
               alt="preview"
               onClick={() => {
@@ -188,8 +192,11 @@ export default function StackItem({ item }: { item?: stack | undefined }) {
             />
           )}
           {imageURL && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img className="h-48 w-fit" src={imageURL} alt="preview" />
+            <img
+              className="h-48 w-fill object-contain aspect-square m-auto"
+              src={imageURL}
+              alt="preview"
+            />
           )}
           <input
             type="file"

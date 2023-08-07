@@ -33,9 +33,19 @@ body {
 .svg-logo {
   filter: drop-shadow(9px 17px 0px #000000a3);
 }
-.pers {
+.perspective {
   perspective: 100rem;
 }
 .tres {
   transform: rotateY(31deg) scale(0.93) skewY(360deg);
+}
+
+.looping {
+  animation: looping infinite linear 60s;
+}
+
+@keyframes looping {
+  100% {
+    transform: translate(0px, 0px);
+  }
 }

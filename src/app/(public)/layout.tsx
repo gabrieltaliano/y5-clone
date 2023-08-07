@@ -1,9 +1,18 @@
+import { Alfa_Slab_One, Roboto, Yeseva_One } from "next/font/google";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
-// const inter = Inter({ subsets: ["latin"] });
+const alfaSlabOne = Yeseva_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--alfaSlabOne-script",
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--roboto-script",
+});
 
 export const metadata: Metadata = {
   title: "Y5 - Clone",
@@ -17,8 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}> */}
-      <body className="flex min-h-screen flex-col items-center justify-between relative text-white">
+      <body
+        className={`${alfaSlabOne.variable} ${roboto.variable} flex min-h-screen flex-col items-center justify-between relative text-white font-roboto`}
+      >
         <NavBar />
         {children}
         <Footer />

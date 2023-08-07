@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <>
       {!isRootPath && (
-        <div className="absolute left-2 top-6 h-10 aspect-square mra">
+        <div className="absolute left-2 top-6 h-10 aspect-square">
           <Image src={logo} alt="logo" fill />
         </div>
       )}
@@ -29,13 +29,13 @@ export default function NavBar() {
         <ActiveLink href="/technologies" activeClassName={activeClass}>
           Technologies
         </ActiveLink>
-        <ActiveLink href="/3" activeClassName={activeClass}>
+        <ActiveLink href="/industries" activeClassName={activeClass}>
           Industries
         </ActiveLink>
-        <ActiveLink href="/4" activeClassName={activeClass}>
+        <ActiveLink href="/peopleweworkwith" activeClassName={activeClass}>
           People we work with
         </ActiveLink>
-        <ActiveLink href="/4" activeClassName={activeClass}>
+        <ActiveLink href="/" activeClassName={activeClass}>
           Contact
         </ActiveLink>
       </nav>

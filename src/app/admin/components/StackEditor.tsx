@@ -47,7 +47,7 @@ export default function StackEditor() {
       <h1 className="text-3xl font-bold text-slate-400">StackEditor</h1>
 
       <StackItem />
-      <div className="grid grid-cols-5 gap-1">
+      <div className="grid grid-cols-6 gap-1">
         {stack
           .sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1))
           .map((stackItem) => (
