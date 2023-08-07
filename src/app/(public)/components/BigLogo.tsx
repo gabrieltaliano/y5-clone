@@ -1,7 +1,7 @@
 export default function BigLogo() {
   return (
     <svg
-      className="fill- w-96 aspect-square block z-50 absolute top-[50vh] -translate-y-1/2 svg-logo"
+      className="w-96 aspect-square block z-50 absolute top-[50vh] -translate-y-1/2 svg-logo"
       viewBox="0 0 100 100"
     >
       <style type="text/css">{"path{fill:url(#MyGradient)}"}</style>

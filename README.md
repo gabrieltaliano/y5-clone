@@ -52,3 +52,11 @@ const firebaseConfig = {
 ### Important
 
 Save the `apiKey` value as env variable to keep it safe.
+
+### Stack
+
+- NextJs
+- Typescript
+- TailwindCSS
+- Firebase
+- Lodash
