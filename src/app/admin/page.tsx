@@ -10,7 +10,7 @@ import {
 import StackEditor from "./components/StackEditor";
 
 export default function Page() {
-  const [user, setUser] = useState<string | undefined>("none");
+  const [user, setUser] = useState<string | undefined>();
 
   const googleProvider = new GoogleAuthProvider();
   googleProvider.setCustomParameters({ prompt: "select_account" });

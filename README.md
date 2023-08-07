@@ -1,5 +1,9 @@
 [![Node.js CI](https://github.com/gabrieltaliano/y5-clone/actions/workflows/node.js.yml/badge.svg)](https://github.com/gabrieltaliano/y5-clone/actions/workflows/node.js.yml)
 
+# Based on the Y5 site
+
+<https://y5.nz/>
+
 ## Getting Started
 
 First, run the development server:
@@ -16,15 +20,21 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Online demo
 
-Hosted on vercel: [Here](https://y5-clone-gabrieltaliano.vercel.app/)
+Hosted on vercel [here](https://y5-clone-gabrieltaliano.vercel.app/)
 
+
+## Admin tool
+
+Added a utility route to manage the technology list shown on the site.
+
+- [Admin console](https://y5-clone-gabrieltaliano.vercel.app/admin)
+- [Technology section](https://y5-clone-gabrieltaliano.vercel.app/technologies)
 
 ## DataBase
 
-This project use Firebase Firestore database. You should create a firebase project in your console first:
+This project uses Firebase Firestore database. You should create a firebase project in your console first:
 
 - [Firebase Console](https://console.firebase.google.com/) - Create a new project.
-
 
 Then, copy your firebase configuration in the `lib/firebase.js` file. For example:
 
@@ -39,12 +49,6 @@ const firebaseConfig = {
 }
 ```
 
-#### Important
+### Important
 
 Save the `apiKey` value as env variable to keep it safe.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
